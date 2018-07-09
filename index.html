@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Blog 1</title>
+
+                <!--    BOOTSTRAP   -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+                
+                <link rel="shortcut icon" href="image/deer.png">
+
+                <link rel="stylesheet" type="text/css" href="styles.css">
+        
+                <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+                <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+                <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+                <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+                <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" />
+                
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                
+                <!-- Include all compiled plugins (below), or include individual files as needed -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" id="iconBar" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand my-logo" href="#"><img src="image/my-logo.png" alt="Deer"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">       
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>                  
+                </ul>   
+            </div>
+        </nav> 
+
+        <!--    Carousel full-screen resolution is 1200x480 for larger image use 1500x850   -->
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="7000" data-wrap="true"> <!--  START OF SLIDER-->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="image/responsive-design.png" alt="First Slide">
+                    <div class="carousel-caption">
+                        <div class="caption-center">
+                            <h1>HyperText Markup Language</h1>
+                            <br>
+                            <button type="button" class="btn btn-default">Learn More..</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="image/typing.png" alt="Second Slide">
+                    <div class="carousel-caption">
+                        <div class="caption-center">
+                            <h1>Cascading Stylesheet</h1>
+                            <br>
+                            <button type="button" class="btn btn-default">Learn More..</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="image/developer-view.png" alt="Third Slide">
+                    <div class="carousel-caption">
+                        <div class="caption-center">
+                            <h1>Bootstrap</h1>
+                            <br>
+                            <button type="button" class="btn btn-default">Learn More..</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--    Start Slider's controls    -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left icon-size" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span> </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right icon-size" aria-hidden="true"></span>
+                <span class="sr-only">Next</span></a>   
+
+        </div> <!--    END OF SLIDER    -->
+
+        <div class="container text-center technologies" style="padding-top: 2%; padding-bottom: 2%;">
+            <h2>Technologies used</h2>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="image/html.png" alt="HTML5" id="icon">
+                    <h3>HTML5</h3>
+                </div>
+                <div class="col-sm-4">
+                    <img src="image/css.png" alt="CSS3" id="icon">
+                    <h3>CSS3</h3>
+                </div>
+                <div class="col-sm-4">
+                    <img src="image/bootstrap.png" alt="BOOTSTRAP" id="icon">
+                    <h3>BOOTSTRAP</h3>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container-fluid" style="background-color: azure;">
+            <div class="row aboutBlog">
+                <div class="col-lg-6">
+                    <h4>What is Front-end development about??</h4>
+                    <p class="text-justify">Have you ever wondered while looking at a website how the designs were made so attractive and thought of how difficult it is or how you wish to do the same.</p> <p>Well the answer is front-end development.</p>
+                    <p class="text-justify"><strong>HTML</strong>  (Hyper Text Markup Language) and <strong>CSS</strong>  (Cascading Style Sheets) are the most basic building blocks of web coding. Without these two things, you can’t create a website design, and all you’ll end up with is unformatted plain text on the screen. You can’t even add images to a page without HTML! <strong>JavaScript</strong>  is a scripting language that’s widely used to add functionality and interactivity to web pages.</p>
+                    <p>Traditionally speaking, you can always enroll in a university or training institutes. But these can be costly and since web evolves rapidly, schools can’t keep up. You can learn online where there are a lot of good quality training courses that provide interactive coding you can enroll in.</p>
+
+                            
+
+                        <p><a href="https://www.w3schools.com/" target="_blank">Here</a> is my personal favorite site where you can learn any basic front-end language.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="image/Programming-Languages.png" alt="Programming Languages" id="progImage" style="width: 100%; height: 100%;">
+                </div>  
+            </div>
+        </div>
+
+        <div class="container-fluid recommendation">
+            <h2 style="text-align: center;">Preprocessors recommended</h2>
+            <div class="row preprocessor">
+                <div class="col-lg-3 col-xs-12">
+                    <h4>Build using Sass</h4>
+                    <p class="text-justify">CSS on its own can be fun, but stylesheets are getting larger, more complex, and harder to maintain. This is where a preprocessor can help. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance and other nifty goodies that make writing CSS fun again.</p>
+                    <p class="text-justify">Once you start tinkering with Sass, it will take your preprocessed Sass file and save it as a normal CSS file that you can use in your website. For more visit: <a href="https://sass-lang.com/" target="_blank">the main SASS website</a>.</p>
+                </div>
+                <div class="col-lg-3 col-xs-12 pro-logo processor-lg">
+                    <img src="image/sass.png" alt="SASS" class="img-responsive">
+                </div>
+                <div class="col-lg-3 col-xs-12">
+                    <h4>Build using LESS</h4>
+                    <p class="text-justify">LESS (which stands for Leaner Style Sheets) is a backwards-compatible language extension for CSS. This is the official documentation for Less, the language and Less.js, the JavaScript tool that converts your Less styles to CSS styles.</p>
+                    <p class="text-justify">Because Less looks just like CSS, learning it is a breeze. Less only makes a few convenient additions to the CSS language, which is one of the reasons it can be learned so quickly. For more visit: <a href="http://lesscss.org/" target="_blank">the main LESS website</a>.</p>
+                </div>
+                <div class="col-lg-3 col-xs-12 pro-logo processor-lg">
+                    <img src="image/less.png" alt="LESS" class="img-responsive">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="container hide-toggle toggle-part" >
+            <div class="row">
+                <h4><a href="#hidden" data-toggle="collapse"><i class="fa fa-caret-down"></i>  What the heck is Lorem Ipsum??</a></h4>
+                <div id="hidden" class="collapse">
+                    <h4>Here is a basic idea</h4>
+                    <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </div>  
+            </div>
+        </div>
+
+        <footer class="container-fluid text-center">
+            <div class="row">
+                <div class="col-sm-4 logo">
+                    <img src="image/my-logo.png" alt="Deer" id="icon">
+                </div>
+                <div class="col-sm-4 contact">
+                    <h3>CONTACT ME</h3>
+                    <p>reemshams92@gmail.com</p>
+                    <p>Jeddah,</p>
+                    <p>Saudi Arabia.</p>
+                </div>
+                <div class="social col-sm-4 media">
+                    <h3>SOCIAL MEDIA</h3>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-github"></a>
+                    <a href="#" class="fa fa-linkedin"></a>     
+                </div>               
+            </div>
+        </footer>
+    </body>
+</html>

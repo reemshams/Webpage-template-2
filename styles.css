@@ -1,0 +1,363 @@
+p {
+    font-family: 'Lato';
+    font-size: 1.3em;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-size: 6em;
+    text-shadow: 2px 2px 6px black;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Merriweather';
+    font-size: 3em;
+    color: midnightblue;
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Nunito';
+    font-size: 1.8em;
+    font-weight: bold;
+    /* color: blueviolet; */
+}
+
+h4 {
+    font-family: 'Nunito';
+    font-size: 2em;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+footer {
+    width: 100%;
+    background-color: midnightblue;
+    padding: 3%;
+    color: #FFF;
+}
+
+a:link, a:active, a:visited {
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    background-color: ivory;
+    border-radius: 25px;
+}
+
+.navbar { /* the whole navigation*/
+    position: absolute;
+    width: 100%;
+    font-family: 'Alegreya Sans SC';
+    font-size: 1.7em;
+    z-index: 999;
+    top: 10px;
+    /* margin-bottom: 0;
+    border-radius: 0; */
+    background: transparent;
+    color: #FFF;
+    /* padding: 1% 0; */
+    border: none; 
+}
+
+.navbar-brand img { /* The image in the navigation */
+    float: left;
+    margin: 0;
+    height: 100px;
+    width: 300px;
+} 
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+    color: #FFF;
+    background: none;
+} 
+
+.navbar-inverse .navbar-nav li a {
+    color: #d5d5d5;
+}
+.navbar-nav a:hover {
+    border-bottom-style: solid;
+    border-bottom-color: #d5d5d5;
+}
+
+.carousel img {
+    filter: blur(3px);
+    width: 100%;
+}
+.carousel-control {
+    background-color: transparent !important;
+}
+
+.icon-size {
+    margin: 0;
+    padding-top: 1%;
+    font-size: 1em !important;
+    border: solid;
+    border-radius: 55px;
+    color: #FFF !important;
+} 
+
+.carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 100, 100, 0.5);
+}
+
+ .caption-center {
+    position: relative;
+    top: 45%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+
+} 
+
+.btn {
+    font-size: 2em;
+    font-family: 'Baloo';
+    color: black;
+    padding: 12px 22px;
+    background-color: transparent;
+    border: none;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: red;
+    text-shadow: 2px 2px 6px black;
+}
+
+.aboutBlog {
+    margin: 0 auto;
+    padding: 2%;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.aboutBlog h4 {
+    font-size: 2.5em;
+}
+
+.recommendation {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.preprocessor {
+    margin: 0 auto;
+    padding: 2%;
+    justify-content: center;
+}
+
+.processor-lg {
+    
+    padding-top: 5%;
+}
+
+.toggle-part {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+.hide-toggle a:link, .hide-toggle a:active, .hide-toggle a:visited {
+    background-color: transparent;
+    color: purple !important;
+}
+
+.hide-toggle a:hover {
+    color: mediumblue !important;
+}
+
+.social a {
+    padding: 5%;
+    font-size: 2em;
+    color: #FFF;
+}
+
+.social a:hover {
+    background-color: transparent;
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+.contact p {
+    font-size: 1em;
+}
+
+.contact, .media, .logo {
+    padding-top: 3%;
+}
+
+#iconBar:hover, #iconBar:active, #iconBar:visited, #iconBar {
+    background: transparent !important;
+}
+
+#icon {
+    max-width: 200px;
+    max-height: 300px;
+    margin: 1% auto;
+    padding-top: 5%;
+}
+
+#hidden {
+    margin: 2%;
+}
+
+@media (max-width: 600px){ /*Mobile phones*/
+    .navbar-nav {
+        font-size: 1em;
+        padding: 0%;
+        background-color: rgba(115, 104, 218);
+        color: #FFF !important;
+        border-style: none;
+    }
+
+    .carousel-caption {
+        display: none;
+    }
+    
+    .pro-logo {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .toggle-part {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    #icon {
+        max-width: 150px;
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 768px){ /* Tablets */
+    .navbar-nav {
+        font-size: 1em;
+        padding: 0%;
+        background-color: rgba(115, 104, 218,0.9);
+        color: #FFF !important;
+        border-style: none;
+    }
+
+    .carousel-caption {
+        font-size: .6em !important;
+    }
+
+    .my-logo img{
+        height: 40px;
+        width: 100px;
+    }
+
+    .pro-logo {
+        padding-bottom: 10%;
+        max-width: 26em;
+        max-height: 26em;
+        /* margin: 0 auto; */
+        margin-left: 25%;
+        display: block;
+    }
+
+    .toggle-part {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+ @media (max-width: 1500px){ /* Laptops & Apple iPad Pro */
+    .carousel-caption {
+        padding-left: 3%;
+        padding-right: 3%;
+        font-size: .8em;
+    }
+
+    .my-logo img{
+        height: 100px;
+        width: 300px;
+    }
+
+    .processor-lg {
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .pro-logo {
+        padding-bottom: 10%;
+        max-width: 26em;
+        max-height: 26em;
+        /* margin: 0 auto; */
+        margin-left: 25%;
+        display: block;
+    }
+} 
+
+ @media (min-width: 2000px){ /* LCD Screens */
+    .carousel-caption {
+        font-size: 2.2em;
+    }
+
+    .navbar {
+        font-size: 2.5em !important;
+        padding-top: 2%;
+        padding-right: 2%;
+    }
+
+    .my-logo img{
+        height: 150px;
+        width: 450px;
+    }
+
+    .technologies {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .aboutBlog p {
+        font-size: 2em;
+    }
+
+    .preprocessor {
+        display: flex;
+    }
+    
+    .processor-lg {
+        padding-bottom: 3% !important;
+        max-width: 26em;
+        max-height: 26em;
+        /* margin: 0 auto; */
+    }
+
+    .contact p, .media p {
+        font-size: 2em;
+    }
+
+    .contact h3, .media h3 {
+        font-size: 3em;
+    }
+
+    #progImage {
+        float: right;
+        /* margin: 0 auto; */
+        padding-right: 20px;
+        max-width: 900px;
+        max-height: 500px;
+    }
+
+    #icon {
+        max-width: 400px;
+        max-height: 350px;
+    }
+} 
